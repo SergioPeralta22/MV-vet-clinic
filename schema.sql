@@ -22,3 +22,16 @@ CREATE TABLE species (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR
 );
+
+--modify animals table
+
+CREATE SEQUENCE animals_id_seq;
+
+ALTER TABLE animals
+    DROP CONSTRAINT animals_pkey, 
+    ALTER COLUMN id SET DEFAULT nextval('animals_id_seq'),
+    ADD COLUMN species_id INTEGER REFERENCES species (id),
+    ADD COLUMN owner_id INTEGER REFERENCES owners (id);
+
+ALTER TABLE animals
+    ADD PRIMARY KEY (id);
