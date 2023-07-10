@@ -9,3 +9,11 @@ SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
+
+BEGIN;
+UPDATE animals
+SET species = 'unspecified'
+WHERE name LIKE '%mon';
+SELECT * FROM animals; 
+ROLLBACK;
+SELECT * FROM animals; 
