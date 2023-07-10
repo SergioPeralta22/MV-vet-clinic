@@ -38,7 +38,7 @@ SELECT * FROM animals;
 UPDATE animals
 SET species = 'pokemon'
 WHERE species = '';
-SELECT * FROM animals; -- Verificar cambios
+SELECT * FROM animals; 
 COMMIT;
 SELECT * FROM animals;
 
@@ -46,7 +46,7 @@ SELECT * FROM animals;
 
 BEGIN;
 DELETE FROM animals;
-SELECT * FROM animals; -- Verificar que no hay registros
+SELECT * FROM animals; 
 ROLLBACK;
 SELECT * FROM animals;
 
@@ -74,6 +74,7 @@ LIMIT 1;
 SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
 FROM animals
 GROUP BY species;
+
 
 SELECT species, AVG(escape_attempts) AS avg_escape_attempts
 FROM animals
