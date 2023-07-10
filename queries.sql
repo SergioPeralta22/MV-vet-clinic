@@ -16,4 +16,45 @@ SET species = 'unspecified'
 WHERE name LIKE '%mon';
 SELECT * FROM animals; 
 ROLLBACK;
+SELECT * FROM animals;
+
+BEGIN;
+UPDATE animals
+SET species = 'pokemon'
+WHERE species = '';
 SELECT * FROM animals; 
+COMMIT;
+SELECT * FROM animals;
+
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+SELECT * FROM animals; 
+COMMIT;
+SELECT * FROM animals;
+
+-- fix error with empty species
+UPDATE animals
+SET species = 'pokemon'
+WHERE species = '';
+SELECT * FROM animals; -- Verificar cambios
+COMMIT;
+SELECT * FROM animals;
+
+--delete the table
+
+BEGIN;
+DELETE FROM animals;
+SELECT * FROM animals; -- Verificar que no hay registros
+ROLLBACK;
+SELECT * FROM animals;
+
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SAVEPOINT update_weights;
+UPDATE animals SET weight_kg = weight_kg * -1;
+ROLLBACK TO update_weights;
+UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+COMMIT;
+SELECT * FROM animals;
