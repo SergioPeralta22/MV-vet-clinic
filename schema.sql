@@ -35,3 +35,10 @@ ALTER TABLE animals
 
 ALTER TABLE animals
     ADD PRIMARY KEY (id);
+
+CREATE TABLE vets (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(250),
+  age INTEGER,
+  date_of_graduation DATE
+);
