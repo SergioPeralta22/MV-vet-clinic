@@ -235,8 +235,6 @@ I would like to thank Microverse for giving me the opportunity to learn and grow
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
 - **Do I need to install any program before running this project?**
 
   - [ ] **Yes, you need to install PostgreSQL** 
