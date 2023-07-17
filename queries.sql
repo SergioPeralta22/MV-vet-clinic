@@ -199,3 +199,14 @@ WHERE vets.name = 'Maisy Smith'
 GROUP by species.name
 ORDER by COUNT(species.name) DESC
 LIMIT 1;
+
+
+
+-- Analyze animals_id
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+-- Analyze vets_id
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+-- Analyze email
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
