@@ -24,6 +24,9 @@ CREATE TABLE medical_history_treatments (
   PRIMARY KEY (medical_history_id, treatment_id)
 );
 
+CREATE INDEX idx_medical_history_treatments_medical_history_id ON medical_history_treatments (medical_history_id);
+CREATE INDEX idx_medical_history_treatments_treatment_id ON medical_history_treatments (treatment_id);
+
 CREATE TABLE invoice_items (
   id SERIAL PRIMARY KEY,
   unit_price DECIMAL,
@@ -40,3 +43,6 @@ CREATE TABLE invoices (
   payed_at TIMESTAMP,
   medical_history_id INTEGER UNIQUE REFERENCES medical_histories(id)
 );
+
+CREATE INDEX idx_invoice_items_invoice_id ON invoice_items (invoice_id);
+CREATE INDEX idx_invoice_items_treatment_id ON invoice_items (treatment_id);
