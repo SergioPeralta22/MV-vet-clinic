@@ -11,4 +11,9 @@ CREATE TABLE medical_histories (
   email VARCHAR(120)
 );
 
+CREATE TABLE treatments (
+  id SERIAL PRIMARY KEY,
+  type VARCHAR(100),
+  name VARCHAR(255)
+);
 
