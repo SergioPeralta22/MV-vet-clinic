@@ -12,12 +12,6 @@
   <h1><b>Vet Clinic Database</b></h1><a name="about-project"></a>
 </div>
 
-
-
-
-
-
-
 <!--
 HOW TO USE:
 This is an example of how you may give instructions on setting up your project locally.
@@ -39,7 +33,6 @@ REQUIRED SECTIONS:
 
 After you're finished please remove all the comments and instructions!
 -->
-
 
 <!-- TABLE OF CONTENTS -->
 
@@ -69,7 +62,6 @@ After you're finished please remove all the comments and instructions!
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
 > I built a vet clinic database that stores information about animals. The database can be queried by different parameters.
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -102,7 +94,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-
 - **The DB contains information about animals**
 - **You can find animals by different queries**
 
@@ -111,8 +102,6 @@ After you're finished please remove all the comments and instructions!
 <!-- - Not available
 
 ## 🚀 Live Demo <a name="live-demo"></a> -->
-
-
 
 <!-- - [Live Demo Link](<replace-with-your-deployment-URL>)
 
@@ -128,17 +117,13 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-
 ```sh
-sudo apt-get install postgresql postgresql-contrib 
+sudo apt-get install postgresql postgresql-contrib
 ```
-
 
 ### Setup
 
 Clone this repository to your desired folder:
-
 
 ```sh
   cd my-folder
@@ -148,7 +133,6 @@ Clone this repository to your desired folder:
 ### Install
 
 Install this project with:
-
 
 ```sh
   cd MV-vet-clinic
@@ -194,6 +178,13 @@ Example:
 - Twitter: [@SePeralta22](https://twitter.com/SePeralta22)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sergioperalta22)
 
+👤 **steven wafeek**
+
+- GitHub: [StevenWafeek](https://github.com/StevenWafeek)
+- Twitter: [steven_hakeem](https://twitter.com/steven_hakeem)
+- LinkedIn: [steven wafeek
+  ](https://www.linkedin.com/in/steven-wafeek-b629341b6/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -220,7 +211,6 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project,please give it a ⭐️!
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -237,15 +227,13 @@ I would like to thank Microverse for giving me the opportunity to learn and grow
 
 - **Do I need to install any program before running this project?**
 
-  - [ ] **Yes, you need to install PostgreSQL** 
-  
+  - [ ] **Yes, you need to install PostgreSQL**
+
   <br>
 
 - **Can I use this project for my own purposes?**
 
   - [ ] **Yes, you can.**
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -254,6 +242,5 @@ I would like to thank Microverse for giving me the opportunity to learn and grow
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
